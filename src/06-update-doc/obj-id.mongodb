@@ -1,0 +1,10 @@
+use("ecommerce");
+
+db.products.updateOne(
+  { _id: ObjectId("655cd00d85b949546b6e36c1") },
+  {
+    $inc: {
+      price: 50,
+    },
+  }
+);

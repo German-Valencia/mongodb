@@ -1,0 +1,10 @@
+use("ecommerce");
+
+db.inventory.updateOne(
+  { _id: 4 },
+  {
+    $push: {
+      tags: "headphone",
+    },
+  }
+);

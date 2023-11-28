@@ -1,0 +1,12 @@
+use("ecommerce");
+
+db.products.updateOne(
+  { name: "change name" },
+  {
+    $set: {
+      name: "change name again",
+      price: 3000,
+      tags: ["A", "B", "B"],
+    },
+  }
+);

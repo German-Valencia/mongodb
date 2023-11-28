@@ -1,0 +1,3 @@
+use("ecommerce");
+
+db.products.deleteOne({ _id: 1 });

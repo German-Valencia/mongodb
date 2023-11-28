@@ -1,0 +1,12 @@
+use("ecommerce");
+
+db.iot.updateOne(
+  {
+    sensor: "A001",
+    date: "2022-01-04",
+  },
+  {
+    $push: { readings: 9999 },
+  },
+  { upsert: true }
+);

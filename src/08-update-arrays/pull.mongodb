@@ -1,0 +1,23 @@
+use("ecommerce");
+
+//remove one element from array
+db.inventory.updateMany(
+  {},
+  {
+    $pull: {
+      tags: "book",
+    },
+  }
+);
+
+//remove many elements from array
+db.inventory.updateMany(
+  {},
+  {
+    $pull: {
+      tags: {
+        $in: ["appliance", "school"],
+      },
+    },
+  }
+);

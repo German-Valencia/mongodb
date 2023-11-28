@@ -1,0 +1,28 @@
+use("ecommerce");
+
+db.iot.insertOne({
+  sensor: "A001",
+  date: "2022-01-03",
+  readings: [1212],
+});
+
+db.iot.updateOne(
+  {
+    sensor: "A001",
+    date: "2022-01-03",
+  },
+  {
+    $push: { readings: 2323 },
+  }
+);
+
+// pop removes the first or last item of an array (1 last) (-1 first)
+db.iot.updateOne(
+  {
+    sensor: "A001",
+    date: "2022-01-03",
+  },
+  {
+    $pop: { readings: 1 },
+  }
+);
