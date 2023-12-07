@@ -1,0 +1,9 @@
+use("ecommerce");
+
+//db.inventory.find({"item.description": "Single line description."})
+//db.inventory.find({ "item.description": { $regex: /line/ } });
+//db.inventory.find({ "item.description": /line/ });
+//db.inventory.find({ "item.description": /LINE/i }); mayusculas
+//db.inventory.find({ "item.description": /LINE$/i }); final
+//db.inventory.find({ "item.description": /^single/i }); inicio
+//db.inventory.find({ "item.description": /^s/im}); multilinea

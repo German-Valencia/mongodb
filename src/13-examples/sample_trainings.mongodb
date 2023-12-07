@@ -1,0 +1,3 @@
+use("sample_training");
+
+db.trips.find({ tripduration: { $lte: 200 }, usertype: "Subscriber" });
