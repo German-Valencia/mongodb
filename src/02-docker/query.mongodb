@@ -1,3 +1,54 @@
-use("ecommerce")
+/* use("ecommerce")
 
 db.productos.find()
+ */
+
+use("store")
+
+db.order_items.find()
+
+/* db.products.insertOne({
+    name: "T-Shirt",
+    description: "A comfortable cotton t-shirt",
+    price: 25,
+    images: ["https://example.com/tshirt1.jpg", "https://example.com/tshirt2.jpg"],
+    categories: ["Clothing", "Men's"],
+    stock: 10,
+    active: true
+  }) */
+
+ /*  db.categories.insertOne({
+    name: "Clothing",
+    parent_id: null  // Top-level category
+  }) */
+
+/*   db.customers.insertOne({
+    email: "johndoe@example.com",
+    password: "hashed_password", // Use a secure hashing algorithm
+    name: "John Doe",
+    address: {
+      street: "123 Main St",
+      city: "Anytown",
+      state: "CA",
+      zip: "12345"
+    }
+  }) */
+
+ /*  db.orders.insertOne({
+    customer_id: ObjectId("658c4d7fbf2cdbae0ccecba3"),  // Reference the customer ID
+    items: [
+      { product_id: ObjectId("658c4cec0d49e0857d84337c"), quantity: 2, price: 25 },
+      // ... other items
+    ],
+    total_price: 50,
+    payment_method: "Credit Card",
+    order_date: ISODate("2023-12-27T11:20:00Z"),
+    status: "pending"
+  }) */
+
+ /*  db.order_items.insertOne({
+    order_id: ObjectId("658c4e89730557e33eecf268"),
+    product_id: ObjectId("658c4cec0d49e0857d84337c"),
+    quantity: 2,
+    price: 25
+  }) */
